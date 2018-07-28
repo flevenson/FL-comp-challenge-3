@@ -1,0 +1,156 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+body{
+  display: grid;
+  grid-template-columns: 210px 1fr;
+}
+aside{
+  grid-column: 1 / span 1;
+  background-color: #354051;
+  font-family: 'Cabin Condensed', sans-serif;
+}
+.cool-grey-text{
+  color: #9AA3B5;
+}
+.deep-grey-text{
+  color: #606D80;
+}
+.profile-image{
+  border-radius: 50%;
+  width: 92px;
+  margin: 34px 59px 0;
+}
+.profile-name{
+  text-align: center;
+  margin: 10px 0 20px;
+}
+.down-icon{
+  margin-left: 4px;
+}
+.aside-hr{
+  color: #354051;
+  background-color: #354051;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #313A4A;
+  height: 5px;
+  margin: 0;
+}
+/*.aside-nav-section{
+  border-top: 2px solid #606D80;
+}*/
+.aside-nav{
+  margin: 23px 0px 23px 23px;
+}
+.aside-nav-heading{
+  font-size: 14px;
+}
+.aside-nav-item{
+  font-size: 14px;
+  margin: 20px 0px;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+}
+.nav-icon{
+  margin-right: 10px;
+}
+.yellow-square{
+  color: #FFD505;
+}
+.blue-square{
+  color: #2CAFFE;
+}
+.red-square{
+  color: #EA1B61;
+}
+.green-square{
+  color: #04AA8A;
+}
+main{
+  grid-column: 2 / span 1;
+}
+header{
+  display: grid;
+  grid-template-columns: 65px 1fr 65px 65px 65px;
+  height: 65px;
+}
+.header-section{
+  font-size: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #EEEFF3;
+  border-bottom: 2px solid #EEEFF3;
+}
+.header-icon{
+  color: #354051;
+}
+.search-icon{
+  margin-left: 20px;
+  margin-right: 5px;
+  color: #9AA3B5;
+}
+.search-input{
+  border: none;
+  height: 100%;
+  font-size: 16px;
+  padding: 4px;
+  color: #354051;
+}
+::placeholder{
+  color: #9AA3B5;
+  }
+.hamburger{
+  grid-column: 1 / span 1;
+}
+.search{
+  grid-column: 2 / span 1;
+}
+.search-input{
+  width: 95%;
+}
+.user-plus{
+  grid-column: 3 / span 1;
+}
+.calendar{
+  grid-column: 4 / span 1;
+}
+.grid-icon-section{
+  grid-column: 5 / span 1;
+}
+.resume-heading-section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+h1{
+  font-size: 1.7rem;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  margin: 50px 0 10px 50px;
+}
+.location-heading{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1 ;
+  margin-left: 50px;
+}
+.bullet-point{
+  font-size: 3px;
+  position: relative;
+  bottom: 4px;
+  }
+.resume-heading-buttons{
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}  
+.resume-heading-nav{
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 1;
+}
