@@ -122,9 +122,11 @@ header{
   grid-column: 5 / span 1;
 }
 .resume-heading-section{
+  color: #354051;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 50% 25% 25%;
+  border-bottom: 2px solid #EEEFF3;
 }
 h1{
   font-size: 1.7rem;
@@ -134,8 +136,9 @@ h1{
 }
 .location-heading{
   grid-column: 1 / span 1;
-  grid-row: 1 / span 1 ;
+  grid-row: 2 / span 1 ;
   margin-left: 50px;
+  color: #9AA3B5;
 }
 .bullet-point{
   font-size: 3px;
@@ -149,8 +152,46 @@ h1{
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
+  top: 24px;
+  font-size: 14px;
 }  
+.resume-button{
+  color: #9AA3B5;
+  margin: 0 10px;
+  border: 2px solid #D2DAE2;
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+.open-button{
+  width: 90px;
+  border-radius: 40px;
+}
+.open-icon{
+  color: #8CC63E;
+  margin-right: 5px;
+}
+.trash-icon{
+  margin-right: 60px;
+}
 .resume-heading-nav{
+  height: 80px;
   grid-column: 1 / span 3;
   grid-row: 3 / span 1;
+  display:flex;
+  align-items: flex-end;
+}
+.resume-heading-nav-list{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 12px;
+  margin-left: 16px;
+  margin-bottom: 20px;
+  color: #9AA3B5;
 }
