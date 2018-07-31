@@ -144,66 +144,139 @@
         </ul>
       </nav>
     </section>
-    <section>
-      <section>
-        <button></button>
-        <img>
-        <button></button>
+    <section class="lower-section">
+      <section class="graph-section">
+        <section class="circle-graphs-section">
+          <div class="circle-chart-box">
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart turquoise">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <path class="circle"
+                  stroke-dasharray="83.33, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <text x="-18" y="-17" class="data-number">3,154</text>
+                <text x="-18" y="-12" class="data-title">APPLICANTS</text>
+              </svg>
+            </div>
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <path class="circle"
+                  stroke-dasharray="37.5, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <text x="-18" y="-17" class="data-number">1,546</text>
+                <text x="-18" y="-12" class="data-title">INTERVIEWS</text>
+              </svg>
+            </div>
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart purple">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="18.75, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="-18" y="-17" class="data-number">912</text>
+                <text x="-18" y="-12" class="data-title">FORWARDS</text>
+              </svg>
+            </div>
+          </div>
+          <button class="totals-button">TOTALS
+            <span class="bullet-point"><i class="fas fa-circle"></i></span>
+            <span class="preview">Out of 5,231 views</span></button>
+        </section>
+        <section class="bar-graph-section">
+          <img src="images/graph.png" alt="bar graph image" class="bar-graph-image">
+          <button class="applicants-button">APPLICANTS/DAY</button>
+        </section>
       </section>
-      <button></button>
-      <section>
-        <article>
-          <section>
-            <h3>JOB DESCRIPTION</h3>
-            <button></button>
+      <section class="divider">
+        <hr class="left-line">
+        <span class="up-button">
+          <button class="up-icon"><i class="fas fa-angle-up"></i></button>
+        </span>
+        <hr class="right-line">
+      </section>
+      <section class="lowest-section">
+        <article class="job-description-article">
+          <section class="job-description-section article-grid-1">
+            <h3 class="grid-column-1 job-description-heading">JOB DESCRIPTION</h3>
+            <button class="grid-column-2 edit-button"><i class="fas fa-pencil-alt"></i>EDIT</button>
           </section>
-          <section>
-            <h3>POSITION TITLE</h3>
-            <p>Customer Service Representative</p>
-            <hr>
-            <h3>LOCATION</h3>
-            <p>San Francisco, CA</p>
-            <hr>
-            <h3>EMPLOYMENT TYPE</h3>
-            <p>Full-time</p>
-            <hr>
-            <h3>EXPERIENCE</h3>
-            <p>Mid-level</p>
-            <hr>
-            <h3>STATUS</h3>
-            <p>Open</p>
-            <hr>
-            <h3>DESCRIPTION</h3>
-            <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce cutomer service wait times while doing a backhand spring and eating a ham sandwich</p>
-            <hr>
-            <h3>HIRING LEAD</h3>
-            <img>
-            <p>Tom Tizzy</p>
-            <hr>
-            <h3>APPROVED SALARY</h3>
-            <p>$58,000</p>
+          <section class="position-title-section article-grid-2">
+            <h3 class="grid-column-1 article-heading">POSITION TITLE</h3>
+            <p class="grid-column-2 article-content">Customer Service Representative</p>
+            <hr class="grid-row-2">
+          </section>
+          <section class="location-in-JD-section article-grid-2">
+            <h3 class="grid-column-1 article-heading">LOCATION</h3>
+            <p class="grid-column-2 article-content">San Francisco, CA</p>
+            <hr class="grid-row-2">
+          </section>
+          <section class="employment-type-section article-grid-2">
+            <h3 class="grid-column-1 article-heading">EMPLOYMENT TYPE</h3>
+            <p class="grid-column-2 article-content">Full-time</p>
+            <hr class="grid-row-2">
+          </section>
+          <section class="experience-section article-grid-2">
+            <h3 class="grid-column-1 article-heading">EXPERIENCE</h3>
+            <p class="grid-column-2 article-content">Mid-level</p>
+            <hr class="grid-row-2">
+          </section>
+          <section class="status-section article-grid-2">
+            <h3 class="grid-column-1 article-heading">STATUS</h3>
+            <p class="grid-column-2 article-content">Open</p>
+            <hr class="grid-row-2">
+          </section>
+          <section class="description-section article-grid-2">
+            <h3 class="grid-column-1 article-heading">DESCRIPTION</h3>
+            <p class="grid-column-2 article-content description-content">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce cutomer service wait times while doing a backhand spring and eating a ham sandwich</p>
+            <hr class="grid-row-2">
+          </section>
+          <section class="hiring-lead-section article-grid-2">
+            <h3 class="grid-column-1 article-heading">HIRING LEAD</h3>
+            <img class="grid-column-2">
+            <p class="grid-column-2 article-content">Tom Tizzy</p>
+            <hr class="grid-row-2">
+          </section>
+          <section class="approved-salary-section article-grid-2">
+            <h3 class="grid-column-1 article-heading">APPROVED SALARY</h3>
+            <p class="grid-column-2 article-content">$58,000</p>
           </section>
         </article>
-      </section>
-      <section>
-        <section>
+        <section class="social-buttons">
           <button></button>
           <button></button>
           <button></button>
         </section>
-        <section>
+        <section class="link-to-this-job">
           <h2>Link to this Job</h2>
           <p>Lorem ipsum dolor sit amet consectitur aditis cing elit. Integer mollis neque eget vestibpend.</p>
           <input>
           <button></button>
         </section>
-        <section>
+        <section class="use-the-button">
           <h2>Use the Button Widget</h2>
           <p>This widget embeds the buttons for sharing the job for submitting a resume on your website</p>
           <input>
           <button></button>
         </section>
-        <section>
+        <section class="upload-resumes">
           <h2>Upload Resumes by Email</h2>
           <p>You can automatically upload multiple resumes to this job by emailing the address below</p>
           <input>
