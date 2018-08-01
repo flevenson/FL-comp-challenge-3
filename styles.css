@@ -256,7 +256,7 @@ h1{
   justify-content: space-around;
   font-size: 12px;
   margin-left: 16px;
-  margin-bottom: 20px;
+  height: 35px;
   color: #9AA3B5;
 }
 
@@ -489,7 +489,7 @@ article section {
   width: 77px;
   height: 31px;
   margin-top: 21px;
-  margin-left: 1.5%;
+  margin-left: 10px;
   background-color: #7C8BA6;
   border: none;
   color: white;
@@ -787,10 +787,15 @@ button:hover{
     grid-template-columns: repeat(4, 1fr);
     position: relative;
     top: 27px;
+    margin-bottom: 34px;
   }
 
   .resume-heading-nav-item{
     margin-bottom: 12px;
+  }
+
+  .graph-section{
+    height: 660px;
   }
 }
 
@@ -811,6 +816,15 @@ button:hover{
   ::placeholder{
     font-size: 12px;
 }
+  
+  .graph-section{
+    height: 640px;
+  }
+
+  .circle-chart-box{
+    margin-top: 0;
+  }
+}
 
 @media screen and (max-width: 560px) {
 
@@ -821,4 +835,60 @@ button:hover{
   .description-content {
     width: 250px;
 }
+}
 
+@media screen and (max-width: 540px){
+
+  .edit-button{
+    margin-left: 19px;
+  }
+
+  .description-section{
+    height: 230px;
+  }
+
+  .description-content{
+    width: 222px;
+}
+
+  .tim-name{
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  .location-heading{
+    font-size: 12px;
+  }
+
+  .description-section{
+    height: 270px;
+  }
+
+  .description-content{
+    width: 180px;
+  }
+
+  .tim-name{
+    left: 18%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+
+  .graph-section {
+    height: 480px;
+  }
+
+  .bar-graph-image {
+    max-width: 90%;
+
+  .edit-button {
+    margin-left: 25px;
+  }
+
+  .social-button {
+    width: 290px;
+  }
+}
