@@ -940,4 +940,9 @@ button:hover {
   .green-circle {
     display: none;
   }
+
+  .social-button {
+    width: 270px;
+  }
 }
+
