@@ -48,18 +48,32 @@ aside{
 }
 
 .aside-nav{
-  margin: 23px 0px 23px 23px;
+  margin: 23px 0px 23px 0px;
 }
 
 .aside-nav-heading{
   font-size: 14px;
+  padding-left: 23px;
+  margin-bottom: 19px;
 }
 
 .aside-nav-item{
   font-size: 14px;
-  margin: 20px 0px;
   display: grid;
   grid-template-columns: 26px 1fr;
+  line-height: 23px;
+  padding-left: 23px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aside-nav-item:hover{
+  color: white;
+  background-color: #303949;
+  border-left: 3px solid #16A4FA;
+  cursor: pointer;
 }
 
 .nav-icon{
@@ -88,8 +102,8 @@ main{
 
 header{
   display: grid;
-  grid-template-columns: 65px 1fr 65px 65px 65px;
-  height: 65px;
+  grid-template-columns: 72px 1fr 72px 72px 72px;
+  height: 72px;
 }
 
 .header-section{
@@ -100,6 +114,12 @@ header{
   align-items: center;
   border-right: 2px solid #EEEFF3;
   border-bottom: 2px solid #EEEFF3;
+}
+
+.icon-section:hover{
+  background-color: #16A4FA;
+  color: white;
+  cursor: pointer;
 }
 
 .header-icon{
@@ -168,6 +188,8 @@ h1{
   grid-row: 2 / span 1 ;
   margin-left: 54px;
   color: #9AA3B5;
+  margin-bottom: 12px;
+
 }
 
 .bullet-point{
@@ -190,7 +212,8 @@ h1{
   position: relative;
   top: 24px;
   font-size: 14px;
-}  
+} 
+
 
 .resume-button{
   color: #9AA3B5;
@@ -237,9 +260,14 @@ h1{
   color: #9AA3B5;
 }
 
+.resume-heading-nav-item:hover{
+  border-bottom: 3px solid #16A4FA;
+  border-spacing-bottom: 20px;
+}
+
 .lower-section{
   background-color: #EBF2F6;
-  height: 1270px;
+  height: 1370px;
 }
 
 .circle-chart-box {
@@ -249,9 +277,10 @@ h1{
 }
 
 .single-chart {
-  width: 33%;
+  width: 30%;
   justify-content: space-around ;
   transform: rotate(180deg);
+  max-height: 197px;
 }
 
 .circular-chart {
@@ -311,12 +340,13 @@ h1{
   height: 35px;
   border-radius: 40px;
   width: 191px;
-  margin-top: 34px;
+  margin-top: 24px;
 }
 
 .graph-section{
   display: grid;
   grid-template-columns: 55% 45%;
+  height: 23%;
 }
 
 .bar-graph-section{
@@ -336,7 +366,7 @@ h1{
   height: 35px;
   border-radius: 40px;
   width: 191px;
-  margin-top: 40px;
+  margin-top: 9px;
 }
 
 .divider{
@@ -346,7 +376,7 @@ h1{
 
 .left-line{
   grid-column: 1 / span 1;
-  width: 90%;
+  width: 91%;
   height: 1px;
   margin: auto 5px auto 8%;
 }
@@ -363,7 +393,7 @@ h1{
 
 .right-line{
   grid-column: 3 / span 1;
-  width: 90%;
+  width: 94%;
   height: 1px;
   margin: auto 7% auto 5px;
 }
@@ -375,14 +405,13 @@ h1{
 }
 
 .job-description-article{
-  width: 91%;
-  margin-top: 6%;
-  margin-left: 6%;
+  width: 94%;
+  margin-top: 5%;
+  margin-left: 7%;
   background-color: white;
   grid-column: 1 / span 1;
   grid-row: 1 / span 4;
   display:grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
 }
 
 .article-grid-1{
@@ -393,17 +422,29 @@ h1{
 .article-grid-2{
   display: grid;
   grid-template-columns: 23% 77%;
-  grid-template-rows: 95% 5%;
+  grid-template-rows: 74% 26%;
 }
 
 .grid-column-1{
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
+  position: relative;
+  bottom: 12px;
 }
 
 .grid-column-2{
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
+  position: relative;
+  bottom: 12px;
+}
+
+.edit-button, .job-description-heading{
+  top: 3px;
+}
+
+.position-title-heading, .position-title-content{
+  top: 1px;
 }
 
 .grid-row-2{
@@ -414,20 +455,22 @@ h1{
 }
 
 article section {
-  height: 74px;
+  height: 77px;
 }
 
 .article-heading{
   font-size: 12px;
   color: #9AA3B5;
   margin-left: 17%;
-  margin-top: 29px;
+  margin-top: 17px;
 }
 
 .article-content{
-  font-size: 12px;
-  margin-top: 29px;
+  font-size: 15px;
+  margin-top: 16px;
   margin-left: 30px;
+  font-family: 'Cabin Condensed', sans-serif;
+  color: #9AA3B5;
 }
 
 .job-description-section{
@@ -439,8 +482,8 @@ article section {
 .job-description-heading{
   margin-left: 14%;
   margin-top: 29px;
+  color: white;
 }
-
 
 .edit-button{
   width: 77px;
@@ -488,6 +531,25 @@ article section {
   grid-row: 8 / span 1;
 }
 
+.hiring-lead-heading{
+  bottom: 21px;
+}
+
+.tim-tizzy{
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: 10px;
+  bottom: 31px;
+}
+
+.tim-name{
+  position: relative;
+  left: 10%;
+  bottom: 23px;
+  width: 50%;
+}
+
 .approved-salary-section{
   grid-row: 9 / span 1;
 }
@@ -505,9 +567,258 @@ article section {
 .use-the-button{
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
+  position: relative;
+  bottom: 22px;
 }
 
 .upload-resumes{
   grid-column: 2 / span 1;
   grid-row: 4 / span 1;
+  position: relative;
+  bottom: 50px;
 }
+
+.social-buttons-section{
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  margin-left: 70px;
+}
+
+.social-button{
+  height: 48px;
+  width: 280px;
+  color: white;
+  border: none;
+  margin-bottom: 17px;
+  font-size: 14px;
+}
+
+.facebook-button{
+  background-color: #4B71C3;
+}
+
+.twitter-button{
+  background-color: #03ACEF;
+}
+
+.linkedin-button{
+  background-color: #0473B4;
+}
+
+.social-icon, .link-icon{
+  margin-right: 12px;
+}
+.link-section{
+  color: #354051;
+  margin-left: 72px;
+  width: 280px;
+  margin-top: 32px;
+}
+
+.link-heading{
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.link-body{
+  color: #9AA3B5;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.link-input{
+  height: 46px;
+  border: none;
+  background-color: white;
+  width: 220px;
+  padding: 5px;
+  padding: 16px;
+  color: #9AA3B5;
+}
+
+.email-link{
+  width: 280px;
+}
+
+.copy-button{
+  width: 58px;
+  height: 45px;
+  background-color: #49BBC1;
+  color: white;
+  margin-left: -4px;
+  border: none;
+  margin-bottom: 29px;
+}
+
+button:hover{
+  background-color: #AE68AF;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1310px){
+
+  body{
+    grid-template-columns: 0fr;
+  }
+
+  aside{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1110px){
+
+  .resume-heading-nav{
+    margin-left: 2%;
+  }
+
+  .lower-section{
+    height: 1740px;
+  }
+
+  .graph-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+  }
+
+  .totals-button{
+    left: 41%;
+  }
+
+  .bar-graph-section{
+    position: relative;
+    bottom: -25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .applicants-button{
+    left: 0;
+  }
+
+  .lowest-section{
+    grid-template-columns: 65% 35%;
+  }
+}
+
+@media screen and (max-width: 1010px){
+
+  .lower-section{
+    height: 2400px;
+  }
+
+  .job-description-article {
+    width: 87%;
+    margin-top: 5%;
+    margin-left: 1%;
+  }
+
+  .lowest-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-buttons-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-button{
+    width: 700px;
+    margin-left: -57px;
+  }
+
+  .link-section{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 965px) {
+
+  .resume-heading-section{
+    grid-template-columns: 60% 40%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+
+  .resume-heading-section{
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 80% 20%;
+  }
+
+  .resume-heading-buttons{
+    left: 39px;
+    margin-top: 12px;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    justify-content: flex-start;
+  }
+
+  .resume-heading-nav{
+    margin-left: 28px;
+  }
+
+  .social-button{
+    width: 320px;
+  }
+
+  .link-section{
+    width: 290px;
+    margin-left: 30px;
+  }
+
+  .resume-heading-nav{
+    margin-left: 38px;
+  }
+
+  .resume-heading-nav-list{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    top: 27px;
+  }
+
+  .resume-heading-nav-item{
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+
+  h1{
+    font-size: 1.3rem;
+  }
+
+  .description-content{
+    width: 320px;
+  }
+
+  .tim-name{
+    left: 12%;
+  }
+
+  ::placeholder{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 560px) {
+
+  .description-section{
+    height: 190px;
+  }
+
+  .description-content {
+    width: 250px;
+}
+
