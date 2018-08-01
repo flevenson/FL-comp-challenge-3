@@ -236,6 +236,7 @@ h1 {
 }
 
 .resume-heading-nav {
+  grid-column: 1 / span 2;
   align-items: flex-end;
   display:flex;
   height: 80px;
@@ -785,10 +786,18 @@ button:hover {
 
   .resume-heading-nav-item {
     margin-bottom: 12px;
+
   }
 
   .graph-section {
     height: 660px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .totals-button {
+  left: 36%;
   }
 }
 
@@ -821,16 +830,21 @@ button:hover {
 
 @media screen and (max-width: 560px) {
 
+  .totals-button {
+    left: 33%;
+  }
+
   .description-section {
     height: 190px;
   }
 
   .description-content {
     width: 250px;
-}
+  }
 }
 
 @media screen and (max-width: 540px) {
+
 
   .edit-button {
     margin-left: 19px;
@@ -851,6 +865,14 @@ button:hover {
 
 @media screen and (max-width: 440px) {
 
+  .resume-button {
+    height: 40px;
+  }
+
+  .totals-button {
+    left: 28%;
+  }
+
   .location-heading {
     font-size: 12px;
   }
@@ -870,6 +892,10 @@ button:hover {
 
 @media screen and (max-width: 410px) {
 
+  .resume-button {
+    height: 37px;
+  }
+
   .graph-section {
     height: 480px;
   }
@@ -884,5 +910,34 @@ button:hover {
 
   .social-button {
     width: 290px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .resume-button {
+    height: 35px;
+  }
+
+  .totals-button {
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+
+  .resume-button {
+    height: 33px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .resume-button {
+    height: 31px;
+  }
+
+  .green-circle {
+    display: none;
   }
 }
